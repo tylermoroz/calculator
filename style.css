@@ -1,0 +1,53 @@
+body {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: black;
+    height: 35em;
+    width: 35em;
+    display: grid;
+    border: 2px solid black;
+    border-radius: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    padding: 10px;
+}
+
+#display-value {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border: 2px solid black;
+    background: white;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 100px;
+    text-align: right;
+    height: 175px;
+    line-height: 175px;
+}
+
+button {
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 50px;
+}
+
+.number {
+    background: teal;
+}
+
+.clear {
+    background: rgb(0, 119, 255);
+}
+
+.operator {
+    background: rgb(255, 136, 0);
+}
