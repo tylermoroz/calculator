@@ -39,6 +39,10 @@ const calculation = (op) => {
         displayValue.textContent = '';
         answer = undefined;
     } else if(operand.length > 0) {
+        if (currentValue == "0" && operator == '/') {
+            displayValue.textContent = `Impossible`;
+            return;
+        }
         currentValue = operate(operator, Number(operand[0]), Number(displayValue.textContent));
         operator = op;
         operand.splice(0, 2, Math.round(1000000 * currentValue)/1000000);
